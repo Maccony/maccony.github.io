@@ -1,26 +1,25 @@
-* {box-sizing: border-box;}
+* {box-sizing: border-box}
 
-body {background-image: url(/images/white-fabric.png); font-family: Georgia, Verdana, Tahoma, Arial;
+body {background-image: url(/images/white-fabric.png);
+	font-family: Georgia, Verdana, Tahoma, Arial;
 	font-size: 13px}
 
-.grid {
-	display: grid;
+.grid {display: grid;
 	grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
 	grid-auto-rows: 200px;
 	gap: 20px;
 	max-width: 1200px;
 	counter-reset: item;
-	margin: 40px auto;
-}
+	margin: 40px auto}
 
-.item {
-	background-image: url(/images/vintage-concrete.png);
+.item {background-image: url(/images/vintage-concrete.png);
 	border-radius: 0.5em;
 	counter-increment: item;
 	padding: 10px;
 	box-shadow: 0 0 8px black;
 
-	&::after {content: counter(item);}
+	&::after {content: counter(item)}
 }
+
 .boldItem {color: red; font-size: 1.3em}
 .fa-square {text-shadow: 0 0 8px green}
