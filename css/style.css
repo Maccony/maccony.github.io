@@ -23,11 +23,8 @@ body {background-color: brown;}
 		content: counter(item);
 	}
 }
-div::after{
-        display: block;
-        content: '\f17b';
-        font-family: 'Font Awesome 5 Free', 'Font Awesome 5 Brands';
-        font-weight: 900;
-        width: 100px;
-        height: 100px;
-        }
+
+.iconStart {
+	background-color: silver;
+	box-shadow: 0 0 10px rgba(0,0,0,0.5); 
+}
