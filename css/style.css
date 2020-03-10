@@ -1,6 +1,6 @@
 * {box-sizing: border-box;}
 
-body {background-color: brown; font-family: Georgia, Verdana, Tahoma, Arial;
+body {background-image: url(/images/white-fabric.png); font-family: Georgia, Verdana, Tahoma, Arial;
 	font-size: 13px}
 
 .grid {
