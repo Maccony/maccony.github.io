@@ -1,6 +1,7 @@
 * {box-sizing: border-box;}
 
-body {background-color: brown;}
+body {background-color: brown; font-family: Georgia, Verdana, Tahoma, Arial;
+	font-size: 13px}
 
 .grid {
 	display: grid;
