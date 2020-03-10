@@ -1,0 +1,25 @@
+* {box-sizing: border-box;}
+
+body {background-color: brown;}
+
+.grid {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+	grid-auto-rows: 200px;
+	gap: 20px;
+	max-width: 1200px;
+	counter-reset: item;
+	margin: 40px auto;
+}
+
+.item {
+	background-color: orange;
+	border: 2px solid darken(orange, 10%);
+	border-radius: 0.25em;
+	counter-increment: item;
+	padding: 20px;
+
+	&::after {
+		content: counter(item);
+	}
+}
