@@ -15,7 +15,7 @@ body {background-image: url(/images/white-fabric.png); font-family: Georgia, Ver
 
 .item {
 	background-image: url(/images/vintage-concrete.png);
-	border-radius: 0.25em;
+	border-radius: 0.5em;
 	counter-increment: item;
 	padding: 20px;
 	box-shadow: 0 0 8px black;
