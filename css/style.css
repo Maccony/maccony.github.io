@@ -24,12 +24,5 @@ body {background-color: brown;}
 	}
 }
 
-.fa-terminal {
-	color: green;
-	text-shadow: 2px 2px 6px #000;
-}
-
-.fa-square {
-	color: silver;
-	text-shadow: 2px 2px 6px #000;
-}
+.fa-terminal {color: green}
+.fa-square {color: silver; text-shadow: 0 0 8px black}
