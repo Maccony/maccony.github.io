@@ -6,8 +6,10 @@ body {background-image: url(/images/white-fabric.png);
 
 .grid {display: grid; /*создаем grid контейнер*/
 	grid-template-columns: repeat(auto-fit, minmax(360px, 1fr)); /*определяем столбцы grid сетки*/
-	grid-auto-rows: 200px;
-	gap: 20px;
+	/*repeat повторяет, auto-fill заполняет таким кол-вом каким это возможно, параметр minmax указывает одновременно
+	максимальный и минимальный размер столбца*/
+	grid-auto-rows: 200px; /*высота строк в grid контейнере*/
+	gap: 20px; /*расстояние между ячейками в grid контейнере*/
 	max-width: 1200px;
 	counter-reset: item;
 	margin: 40px auto}
