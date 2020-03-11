@@ -4,8 +4,8 @@ body {background-image: url(/images/white-fabric.png);
 	font-family: Georgia, Verdana, Tahoma, Arial;
 	font-size: 13px}
 
-.grid {display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+.grid {display: grid; /*создаем grid контейнер*/
+	grid-template-columns: repeat(auto-fit, minmax(360px, 1fr)); /*определяем столбцы grid сетки*/
 	grid-auto-rows: 200px;
 	gap: 20px;
 	max-width: 1200px;
