@@ -2,24 +2,20 @@
 
 body {background-image: url(/images/white-fabric.png);
 	font-family: Georgia, Verdana, Tahoma, Arial;
-	font-size: 13px}
+	font-size: 13px; margin: 0}
 
 .grid {display: grid; /*создаем grid контейнер*/
 	grid-template-columns: 200px auto; /*определяем столбцы grid сетки*/
 	grid-template-rows: 200px 1fr 100px; /*высота строк в grid контейнере*/
 	gap: 10px; /*расстояние между ячейками в grid контейнере*/
 	max-width: 1200px;
-	counter-reset: item;
+	height: 100vh;
 	margin: auto}
 
 .item {background-image: url(/images/vintage-concrete.png);
 	border-radius: 0.5em;
 	box-shadow: 0 0 8px black;
-	counter-increment: item;
 	padding: 10px;
-	
-
-	&::after {content: counter(item)}
 }
 
 .totalTrack {background-image: url(/images/vintage-concrete.png); grid-column: 1/3;}
