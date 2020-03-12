@@ -9,6 +9,8 @@ body {background-image: url(/images/white-fabric.png);
 	grid-template-rows: 100px auto; /*высота строк в grid контейнере*/
 	gap: 10px; /*расстояние между ячейками в grid контейнере*/
 	max-width: 1200px;
+	grid-template-areas:
+		"header header header";
 	counter-reset: item;
 	margin: 40px auto}
 
@@ -20,6 +22,8 @@ body {background-image: url(/images/white-fabric.png);
 
 	&::after {content: counter(item)}
 }
+
+.item-a {grid-area: header}
 
 a {text-decoration: none; /*убираем подчеркивание текста ссылок*/
 	line-height:30px; /*ровняем меню по вертикали*/
