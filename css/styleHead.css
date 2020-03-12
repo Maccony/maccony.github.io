@@ -15,8 +15,7 @@ body {background-image: url(/images/white-fabric.png);
 	counter-reset: item;
 	margin: 40px auto}
 
-.item {
-	border-radius: 0.5em;
+.item {border-radius: 0.5em;
 	counter-increment: item;
 	padding: 10px;
 	box-shadow: 0 0 8px black;
@@ -24,7 +23,7 @@ body {background-image: url(/images/white-fabric.png);
 	&::after {content: counter(item)}
 }
 
-.header {background-color: lightblue; grid-column-start: 1/4;}
+.header {grid-column-start: 1/4;}
 
 a {text-decoration: none; /*убираем подчеркивание текста ссылок*/
 	line-height:30px; /*ровняем меню по вертикали*/
