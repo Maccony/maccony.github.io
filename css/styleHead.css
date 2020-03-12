@@ -1,3 +1,28 @@
+* {box-sizing: border-box}
+
+body {background-image: url(/images/white-fabric.png);
+	font-family: Georgia, Verdana, Tahoma, Arial;
+	font-size: 13px}
+
+.grid {display: grid; /*создаем grid контейнер*/
+	grid-template-columns: repeat(auto-fit, minmax(360px, 1fr)); /*определяем столбцы grid сетки*/
+	/*repeat повторяет, auto-fill заполняет таким кол-вом каким это возможно, параметр minmax указывает одновременно
+	максимальный и минимальный размер столбца*/
+	grid-auto-rows: 200px; /*высота строк в grid контейнере*/
+	gap: 20px; /*расстояние между ячейками в grid контейнере*/
+	max-width: 1200px;
+	counter-reset: item;
+	margin: 40px auto}
+
+.item {background-image: url(/images/vintage-concrete.png);
+	border-radius: 0.5em;
+	counter-increment: item;
+	padding: 10px;
+	box-shadow: 0 0 8px black;
+
+	&::after {content: counter(item)}
+}
+
 a {text-decoration: none; /*убираем подчеркивание текста ссылок*/
 	line-height:30px; /*ровняем меню по вертикали*/
 	text-align: center;
