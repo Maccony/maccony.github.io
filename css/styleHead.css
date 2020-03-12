@@ -22,7 +22,7 @@ body {background-image: url(/images/white-fabric.png);
 	&::after {content: counter(item)}
 }
 
-.header {background-image: url(/images/vintage-concrete.png); grid-column: 1/3;}
+.totalTrack {background-image: url(/images/vintage-concrete.png); grid-column: 1/3;}
 
 a {text-decoration: none; /*убираем подчеркивание текста ссылок*/
 	line-height:30px; /*ровняем меню по вертикали*/
