@@ -9,7 +9,6 @@ body {background-image: url(/images/white-fabric.png);
 	grid-template-rows: 200px auto; /*высота строк в grid контейнере*/
 	gap: 10px; /*расстояние между ячейками в grid контейнере*/
 	max-width: 1200px;
-
 	counter-reset: item;
 	margin: auto}
 
