@@ -5,11 +5,9 @@ body {background-image: url(/images/white-fabric.png);
 	font-size: 13px}
 
 .grid {display: grid; /*создаем grid контейнер*/
-	grid-template-columns: repeat(auto-fit, minmax(360px, 1fr)); /*определяем столбцы grid сетки*/
-	/*repeat повторяет, auto-fill заполняет таким кол-вом каким это возможно, параметр minmax указывает одновременно
-	максимальный и минимальный размер столбца*/
-	grid-auto-rows: 200px; /*высота строк в grid контейнере*/
-	gap: 20px; /*расстояние между ячейками в grid контейнере*/
+	grid-template-columns: 100px auto 100px; /*определяем столбцы grid сетки*/
+	grid-template-rows: 100px auto; /*высота строк в grid контейнере*/
+	gap: 10px; /*расстояние между ячейками в grid контейнере*/
 	max-width: 1200px;
 	counter-reset: item;
 	margin: 40px auto}
