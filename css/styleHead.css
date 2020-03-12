@@ -11,10 +11,11 @@ body {background-image: url(/images/white-fabric.png);
 	max-width: 1200px;
 	grid-template-areas:
 		"header header header";
+	background-image: url(/images/vintage-concrete.png);
 	counter-reset: item;
 	margin: 40px auto}
 
-.item {background-image: url(/images/vintage-concrete.png);
+.item {
 	border-radius: 0.5em;
 	counter-increment: item;
 	padding: 10px;
