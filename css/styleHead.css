@@ -23,7 +23,8 @@ body {background-image: url(/images/white-fabric.png);
 	&::after {content: counter(item)}
 }
 
-.item-a {grid-area: header}
+.header {grid-column-start: 1; grid-column-end: 4; 
+    	grid-row-start: 1; grid-row-end: 2; }
 
 a {text-decoration: none; /*убираем подчеркивание текста ссылок*/
 	line-height:30px; /*ровняем меню по вертикали*/
