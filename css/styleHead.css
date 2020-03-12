@@ -6,7 +6,7 @@ body {background-image: url(/images/white-fabric.png);
 
 .grid {display: grid; /*создаем grid контейнер*/
 	grid-template-columns: 200px auto; /*определяем столбцы grid сетки*/
-	grid-template-rows: 200px auto; /*высота строк в grid контейнере*/
+	grid-template-rows: 200px auto 100px; /*высота строк в grid контейнере*/
 	gap: 10px; /*расстояние между ячейками в grid контейнере*/
 	max-width: 1200px;
 	counter-reset: item;
