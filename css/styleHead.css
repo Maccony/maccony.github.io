@@ -1,0 +1,9 @@
+a {text-decoration: none; /*убираем подчеркивание текста ссылок*/
+	line-height:30px; /*ровняем меню по вертикали*/
+	text-align: center;
+	background:#FF4444; /*добавляем фон к пункту меню*/
+    color:#fff; /*меняем цвет ссылок*/
+    display: block; border-radius: 7px;
+	font-size: 10pt;}
+a:hover {background:#D43737;/*добавляем эффект при наведении*/
+	font-weight: bold; height: 70px; line-height:70px; border-radius: 10px}
