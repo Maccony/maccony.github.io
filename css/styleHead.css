@@ -9,16 +9,16 @@ body {background-image: url(/images/white-fabric.png);
 	grid-template-rows: 100px auto; /*высота строк в grid контейнере*/
 	gap: 10px; /*расстояние между ячейками в grid контейнере*/
 	max-width: 1200px;
-	grid-template-areas:
-		"header header header";
 	background-image: url(/images/vintage-concrete.png);
+	border-radius: 0.5em;
+	box-shadow: 0 0 8px black;
 	counter-reset: item;
 	margin: 40px auto}
 
-.item {border-radius: 0.5em;
+.item {
 	counter-increment: item;
 	padding: 10px;
-	box-shadow: 0 0 8px black;
+	
 
 	&::after {content: counter(item)}
 }
