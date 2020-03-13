@@ -32,7 +32,7 @@ a {text-decoration: none; /*убираем подчеркивание текст
 	width: 120px; height: 30px;
 	background:#FF4444; /*добавляем фон к пункту меню*/
     color:#fff; /*меняем цвет ссылок*/
-    display: block; border-radius: 5px; padding: 5;
+    display: block; border-radius: 5px;
 	font-size: 0.9em;}
 a:hover {background:#D43737;/*добавляем эффект при наведении*/
 	font-weight: bold; height: 40px; line-height:70px; border-radius: 10px}
