@@ -17,12 +17,12 @@ body {background-image: url(/images/white-fabric.png);
 #leftGrid {grid-column: 2/3}
 #main {grid-column: 3/4}
 
-.v-menu {width: 120px;} /* Set a width if you like */
+.v-menu {width: 150px; } /* Set a width if you like */
 .v-menu a {
     background-color: #eee; /* Grey background color */
     color: black; /* Black text color */
     display: block; /* Make the links appear below each other */
-    padding: 12px; /* Add some padding */
+    padding: 5px; margin-bottom: 5px; height: 50px;/* Add some padding */
     text-decoration: none; /* Remove underline from links */
 }
 
