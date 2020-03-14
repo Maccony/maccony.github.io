@@ -17,18 +17,18 @@ body {background-image: url(/images/white-fabric.png);
 #leftGrid {grid-column: 2/3}
 #main {grid-column: 3/4}
 
-#menu {list-style: none; /*убираем маркеры списка*/
-	margin: 0; padding: 0; /*убираем отступы и поля*/
-	display: flex;
-	direction: rtl; /*flex заполняем справа налево*/}
+.v-menu {width: 120px;} /* Set a width if you like */
+.v-menu a {
+    background-color: #eee; /* Grey background color */
+    color: black; /* Black text color */
+    display: block; /* Make the links appear below each other */
+    padding: 12px; /* Add some padding */
+    text-decoration: none; /* Remove underline from links */
+}
 
-a {text-decoration: none; /*убираем подчеркивание текста ссылок*/
-	line-height:30px; /*ровняем меню по вертикали*/
-	text-align: center;
-	width: 120px; height: 30px;
-	background:#FF4444; /*добавляем фон к пункту меню*/
-    color:#fff; /*меняем цвет ссылок*/
-    display: block; border-radius: 5px;
-	font-size: 0.9em;}
-a:hover {background:#D43737;/*добавляем эффект при наведении*/
-	font-weight: bold; height: 40px; line-height:70px; border-radius: 10px}
+.v-menu a:hover {background-color: #ccc;} /* Dark grey background on mouse-over */
+
+.v-menu a.active {
+    background-color: #4CAF50; /* Add a green color to the "active/current" link */
+    color: white;
+}
