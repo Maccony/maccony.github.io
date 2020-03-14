@@ -35,7 +35,7 @@ body {background-image: url(/images/white-fabric.png);
 
 .mini-menu {
     margin: 0px auto;
-    max-width: 220px;
+    max-width: 150px;
     overflow: hidden;
     font: normal 14px Helvetica, Arial, sans-serif;}
 .mini-menu ul {list-style: none;
@@ -54,6 +54,7 @@ body {background-image: url(/images/white-fabric.png);
     display: none;
     overflow: hidden;
     background: #eee;}
+.mini-menu .sub > ul > li {text-align: right}
 
 .mini-menu .sub > ul > li > a {
     color:#514b92;
