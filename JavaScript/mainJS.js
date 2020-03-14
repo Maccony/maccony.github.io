@@ -1,5 +1,6 @@
 window.onload = allLoad;
 function allLoad(){
+    sub1.onclick = function() {document.getElementById("sub1").style.display = 'block';};
     //document.getElementById("NhaTrang").addEventListener('click', function(e) {
         //document.getElementById("leftGrid").remove();
         //document.getElementById("loadMap").style.gridColumn = '1/3';
