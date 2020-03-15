@@ -30,3 +30,6 @@ body {background-image: url(/images/white-fabric.png);
 	height: 40px; line-height: 40px; /*высота ячейки меню и центрирование по высоте*/
 	font-weight: bold margin-top: 5px;
 }
+.accordion > li:hover > a, .accordion > li: > a {
+	color: green; background-color: lightgreen;
+}
