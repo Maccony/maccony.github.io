@@ -17,22 +17,6 @@ body {background-image: url(/images/white-fabric.png);
 #leftGrid {grid-column: 2/3}
 #main {grid-column: 3/4}
 
-.v-menu {width: 150px; } /* Set a width if you like */
-.v-menu a {
-    background-color: #eee; /* Grey background color */
-    color: black; /* Black text color */
-    display: block; /* Make the links appear below each other */
-    padding: 5px; margin-bottom: 5px; height: 50px;/* Add some padding */
-	text-decoration: none; /* Remove underline from links */
-}
-
-.v-menu a:hover {background-color: #ccc;} /* Dark grey background on mouse-over */
-
-.v-menu a.active {
-    background-color: #4CAF50; /* Add a green color to the "active/current" link */
-    color: white;
-}
-
 /*функция*/
 .accordion li > .sub-menu {height: 0; overflow: hidden} /*скрываем подменю*/
 .accordion li:target > .sub-menu {height: auto} /*при выборе меню подменю появляется*/
@@ -43,5 +27,6 @@ body {background-image: url(/images/white-fabric.png);
 	display: block;
 	text-decoration: none; /*убираем подчеркивание ссылок*/
 	background-color: grey; color: black;
-	height: 40; line-height: 40; /*высота ячейки меню и центрирование по высоте*/
+	height: 40px; line-height: 40px; /*высота ячейки меню и центрирование по высоте*/
+	font-weight: bold margin-top: 5px;
 }
