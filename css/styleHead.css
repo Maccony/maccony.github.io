@@ -33,37 +33,6 @@ body {background-image: url(/images/white-fabric.png);
     color: white;
 }
 
-.mini-menu {
-    margin: 0px auto;
-    max-width: 150px;
-    overflow: hidden;
-    font: normal 14px Helvetica, Arial, sans-serif;}
-.mini-menu ul {list-style: none;
-    margin: 0; padding:0;}
-.mini-menu > ul > li > a {
-    display: block;
-    text-decoration: none;
-    outline: 0;
-    padding: .7em 1em;
-    color:#C9C9C9;
-    font-weight: normal;
-    background: #333;}
-.mini-menu > ul > li > a:hover, .mini-menu > ul > li > a.active {color:#f2bd00;}
-
-.mini-menu .sub > ul {
-    display: none;
-    overflow: hidden;
-    background: #eee;}
-.mini-menu .sub > ul > li {text-align: right}
-
-.mini-menu .sub > ul > li > a {
-    color:#514b92;
-    display: block;
-    font-size: 12px;
-    text-decoration: none;
-    padding: .7em 1em;}
-.mini-menu .sub > ul > li > a:hover,
-.mini-menu .sub > ul > li > a.active {
-    background: #d8d8d8;
-    color: red;
-padding-left: 1.3em}
+/*функция*/
+.accordion li > .sub-menu {height: 0; overflow: hidden}
+.accordion li:target > .sub-menu {height: auto}
