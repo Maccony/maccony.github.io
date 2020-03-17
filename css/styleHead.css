@@ -31,7 +31,7 @@ body {background-image: url(/images/white-fabric.png);
 .accordion > li:hover > a, .accordion > li:target > a {
 	color: green; background-color: lightgreen}
 
-.icon::before {font: 900 1.2em "Font Awesome 5 Free"; margin: : 5px; color: brown}
+.icon::before {font: 900 1.2em "Font Awesome 5 Free"; margin: 5px; color: brown}
 .bus::before {content: "\f55e"}
 .home::before {content: "\f015"}
 .air::before {content: "\f5b0"}
