@@ -21,7 +21,7 @@ body {background-image: url(/images/white-fabric.png);
 .accordion li > .sub-menu {height: 0; overflow: hidden} /*скрываем подменю*/
 .accordion li:target > .sub-menu {height: auto} /*при выборе меню подменю появляется*/
 
-.accordion  {list-style: none} /*удаляем маркеры в списке*/
+.accordion, .sub-menu  {list-style: none; text-align: center} /*удаляем маркеры в списке*/
 
 .accordion li > a {
 	display: block;
