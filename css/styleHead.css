@@ -8,7 +8,7 @@ body {background-image: url(/images/white-fabric.png);
 	grid-template-columns: 10px 180px auto 10px; /*определяем столбцы grid сетки*/
 	grid-template-rows: 100px auto 50px; /*высота строк в grid контейнере*/
 	gap: 10px; /*расстояние между ячейками в grid контейнере*/
-	max-width: 1200px; background: green;
+	max-width: 1200px; background-image: url(/images/vintage-concrete.png);
 	height: 100vh; /*растягиваем grid на весь экран по вертикали*/
 	margin: auto; /*размещаем grid по центру экрана*/}
 
