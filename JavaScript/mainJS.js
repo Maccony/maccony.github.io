@@ -1,6 +1,6 @@
 window.onload = allLoad;
 function allLoad(){
-    wrapper.events('click', function(e) {
+    wrapper.events.add('click', function(e) {
         alert(this.id);
         }
     );
