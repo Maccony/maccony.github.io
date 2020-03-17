@@ -5,7 +5,7 @@ body {background-image: url(/images/white-fabric.png);
 	font-size: 13px; margin: 0}
 
 .grid {display: grid; /*создаем grid контейнер*/
-	grid-template-columns: 10px 150px auto 10px; /*определяем столбцы grid сетки*/
+	grid-template-columns: 10px 180px auto 10px; /*определяем столбцы grid сетки*/
 	grid-template-rows: 100px auto 50px; /*высота строк в grid контейнере*/
 	gap: 10px; /*расстояние между ячейками в grid контейнере*/
 	max-width: 1200px; background: green;
