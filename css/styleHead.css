@@ -20,19 +20,18 @@ body {background-image: url(/images/white-fabric.png);
 .accordion li > .sub-menu {height: 0; overflow: hidden} /*скрываем подменю*/
 .accordion li:target > .sub-menu {height: auto} /*при выборе меню подменю появляется*/
 
-.accordion, .sub-menu  {list-style: none; text-align: center} /*удаляем маркеры в списке*/
+.accordion, .sub-menu  {list-style: none} /*удаляем маркеры в списке*/
 
 .accordion li > a {
 	display: block;
 	text-decoration: none; /*убираем подчеркивание ссылок*/
 	background-color: grey; color: black;
 	height: 40px; line-height: 40px; /*высота ячейки меню и центрирование по высоте*/
-	font-weight: bold margin-top: 5px;
 }
 .accordion > li:hover > a, .accordion > li:target > a {
 	color: green; background-color: lightgreen}
 
-.icon::before {font: 900 1.2em "Font Awesome 5 Free"; color: brown}
+.icon::before {font: 900 1.2em "Font Awesome 5 Free"; margin: : 5px; color: brown}
 .bus::before {content: "\f55e"}
 .home::before {content: "\f015"}
 .air::before {content: "\f5b0"}
