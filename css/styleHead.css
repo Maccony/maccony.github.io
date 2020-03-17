@@ -5,7 +5,7 @@ body {background-image: url(/images/white-fabric.png);
 	font-size: 13px; margin: 0}
 
 .grid {display: grid; /*создаем grid контейнер*/
-	grid-template-columns: 10px 200px auto 10px; /*определяем столбцы grid сетки*/
+	grid-template-columns: 10px 150px auto 10px; /*определяем столбцы grid сетки*/
 	grid-template-rows: 100px auto 50px; /*высота строк в grid контейнере*/
 	gap: 10px; /*расстояние между ячейками в grid контейнере*/
 	max-width: 1200px; background: green;
@@ -13,7 +13,6 @@ body {background-image: url(/images/white-fabric.png);
 	margin: auto; /*размещаем grid по центру экрана*/}
 
 .totalTrack {grid-column: 1/5}
-#top {background: red}
 #leftGrid {grid-column: 2/3}
 #main {grid-column: 3/4}
 
@@ -33,7 +32,5 @@ body {background-image: url(/images/white-fabric.png);
 .accordion > li:hover > a, .accordion > li:target > a {
 	color: green; background-color: lightgreen;
 }
-
-.bus::before {
-	font-family: "Font Awesome 5 Free"; font-weight: 900; content: "\f55e";
-}
+.icon::before {font-family: "Font Awesome 5 Free"; font-weight: 900}
+.bus::before {content: "\f55e"}
