@@ -33,3 +33,7 @@ body {background-image: url(/images/white-fabric.png);
 .accordion > li:hover > a, .accordion > li:target > a {
 	color: green; background-color: lightgreen;
 }
+
+.bus::before {
+	font-family: "Font Awesome 5 Free"; font-weight: 900; content: "\f55e";
+}
