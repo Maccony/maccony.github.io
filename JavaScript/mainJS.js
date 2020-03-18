@@ -7,6 +7,10 @@ function allLoad() {
             myMap = new ymaps.Map("main", {center: [12.244444, 109.192778], zoom: 14, controls: ['rulerControl']},
                 {suppressMapOpenBlock: true, yandexMapDisablePoiInteractivity: true});
         }
+        var routeN = event.target.id;
+        if (busRoutes[routeN] == null) { busRoutes[routeN] = makeRoute(routeN);
+            myMap.geoObjects.add(busRoutes[routeN]);}
+        else {myMap.geoObjects.remove(busRoutes[routeN]); busRoutes[routeN] = null;}
         console.log(event.target.id);
     });
 }
