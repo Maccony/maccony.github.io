@@ -7,6 +7,6 @@ function allLoad() {
             myMap = new ymaps.Map("main", {center: [12.244444, 109.192778], zoom: 14, controls: ['rulerControl']},
                 {suppressMapOpenBlock: true, yandexMapDisablePoiInteractivity: true});
         }
-        alert(event.target + ' : ' + event.currentTarget);
+        alert(this.id);
     };
 }
