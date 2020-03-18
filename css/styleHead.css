@@ -30,7 +30,7 @@ body {background-image: url(/images/white-fabric.png);
 }
 .accordion > li:hover > a, .accordion > li:target > a {
 	color: green; background-color: lightgreen}
-.sub-menu li a {margin-left: 20px}
+.sub-menu li a {text-indent: 25px}
 
 .icon::before {font: 900 1.2em "Font Awesome 5 Free"; margin: 5px; color: brown}
 .bus::before {content: "\f55e"}
