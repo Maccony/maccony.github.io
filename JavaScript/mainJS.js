@@ -8,7 +8,7 @@ function allLoad() {
                 {suppressMapOpenBlock: true, yandexMapDisablePoiInteractivity: true});
         }
         var routeN = event.target.id;
-        if (busRoutes[routeN] == null) { busRoutes[routeN] = makeRoute(routeN);
+        if (busRoutes[routeN] == null && typeof routeN == 'number') { busRoutes[routeN] = makeRoute(routeN);
             myMap.geoObjects.add(busRoutes[routeN]);}
         else {myMap.geoObjects.remove(busRoutes[routeN]); busRoutes[routeN] = null;}
         console.log(event.target.id);
