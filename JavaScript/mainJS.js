@@ -1,6 +1,6 @@
 window.onload = allLoad;
 function allLoad(){
-    wrapper.events.add('click', function(e) {
+    wrapper.addEventListener('click', function() {
         alert(this.id);
         }
     );
@@ -10,7 +10,7 @@ function allLoad(){
             // создадим объект карта (с координатами и zoom) в div элементе
  	//       myMap = new ymaps.Map("main", {center: [12.244444, 109.192778], zoom: 14, controls: ['rulerControl']},
     //            {suppressMapOpenBlock: true, yandexMapDisablePoiInteractivity: true});}};
-        
+
         //alert(document.getElementById("main").firstChild.nodeName);};
     //document.getElementById("NhaTrang").addEventListener('click', function(e) {
         //document.getElementById("leftGrid").remove();
