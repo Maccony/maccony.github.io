@@ -9,7 +9,7 @@ function allLoad() {
         myMap.geoObjects.removeAll();
         myMap.setCenter([12.244444, 109.192778], 14);
         var routeN = event.target.id;
-        if (+routeN > 0) {
+        if (+event.target.id > 0) {
             if (busRoutes[routeN] == null) { busRoutes[routeN] = makeRoute(routeN);
                 myMap.geoObjects.add(busRoutes[routeN]);}
             else {myMap.geoObjects.remove(busRoutes[routeN]); busRoutes[routeN] = null;}
