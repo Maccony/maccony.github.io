@@ -14,7 +14,7 @@ body {background-image: url(/images/white-fabric.png);
 
 .totalTrack {grid-column: 1/5}
 #leftGrid {grid-column: 2/3}
-#main {grid-column: 3/4}
+#main {grid-column: 3/4; opacity: 0}
 
 /*функция*/
 .accordion li > .sub-menu {height: 0; overflow: hidden} /*скрываем подменю*/

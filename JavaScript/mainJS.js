@@ -5,6 +5,7 @@ function allLoad() {
         {suppressMapOpenBlock: true, yandexMapDisablePoiInteractivity: true});
     var busRoutes = {2: null, 3: null, 4: null, 5: null};
     one.addEventListener('click', function(event) {
+        main.style.opacity = 1;
         myMap.geoObjects.removeAll();
         myMap.setCenter([12.244444, 109.192778], 14);
         var routeN = event.target.id;
@@ -16,6 +17,7 @@ function allLoad() {
         if (event.target.id == 'clear') myMap.geoObjects.removeAll();
     });
     two.addEventListener('click', function(event) {
+        main.style.opacity = 1;
         myMap.geoObjects.removeAll();
         myMap.setCenter([52.265374, 104.393120], 14);
         var onHouses = true;
