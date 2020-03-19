@@ -10,7 +10,7 @@ function allLoad() {
         var routeN = event.target.id;
         console.log(routeN);
         console.log(+routeN);
-        if (typeof routeN == 'number') {
+        if (+routeN > 0) {
             if (busRoutes[routeN] == null) { busRoutes[routeN] = makeRoute(routeN);
                 myMap.geoObjects.add(busRoutes[routeN]);}
             else {myMap.geoObjects.remove(busRoutes[routeN]); busRoutes[routeN] = null;}
