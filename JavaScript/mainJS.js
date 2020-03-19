@@ -13,6 +13,7 @@ function allLoad() {
                 myMap.geoObjects.add(busRoutes[routeN]);}
             else {myMap.geoObjects.remove(busRoutes[routeN]); busRoutes[routeN] = null;}
         }
+        if (event.target.id == 'clear') myMap.geoObjects.removeAll();
     });
     two.addEventListener('click', function(event) {
         if (document.getElementById("main").firstChild == null) {
