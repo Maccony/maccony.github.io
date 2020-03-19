@@ -7,7 +7,6 @@ function allLoad() {
     one.addEventListener('click', function(event) {
         myMap.geoObjects.removeAll();
         myMap.setCenter([12.244444, 109.192778]);
-
         var routeN = event.target.id;
         if (+routeN > 0) {
             if (busRoutes[routeN] == null) { busRoutes[routeN] = makeRoute(routeN);
@@ -17,11 +16,8 @@ function allLoad() {
         if (event.target.id == 'clear') myMap.geoObjects.removeAll();
     });
     two.addEventListener('click', function(event) {
-        if (document.getElementById("main").firstChild == null) {
-            // создадим объект карта (с координатами и zoom) в div элементе
-            myMap = new ymaps.Map("main", {center: [52.265374, 104.393120], zoom: 14, controls: ['rulerControl']},
-                {suppressMapOpenBlock: true, yandexMapDisablePoiInteractivity: true});
-        }
+        myMap.geoObjects.removeAll();
+        myMap.setCenter([52.265374, 104.393120]);
         var onHouses = true;
     	var collectionHouses = new ymaps.GeoObjectCollection({}, {preset: 'islands#blueStretchyIcon'});
     	collectionHouses.add(new ymaps.Placemark([52.262570, 104.406215], {iconContent: "пеленгатор"}));
