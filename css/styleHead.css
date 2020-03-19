@@ -37,3 +37,5 @@ body {background-image: url(/images/white-fabric.png);
 .home::before {content: "\f015"}
 .air::before {content: "\f5b0"}
 .linux::before {content: "\f11c"}
+.placeMark::before {content: "\f3c5"}
+.poligon::before {content: "\f5ee"}
