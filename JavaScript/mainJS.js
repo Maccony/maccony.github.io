@@ -6,7 +6,7 @@ function allLoad() {
     var busRoutes = {2: null, 3: null, 4: null, 5: null};
     zero.addEventListener('click', function(event) {
         resetMap(0, [30.243380, 166.667695]);
-    }
+    });
     one.addEventListener('click', function(event) {
         resetMap(1, [12.244444, 109.192778]);
         var routeN = event.target.id;
