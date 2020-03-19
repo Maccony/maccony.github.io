@@ -4,6 +4,9 @@ function allLoad() {
     myMap = new ymaps.Map("main", {center: [30.243380, 166.667695], zoom: 14, controls: ['rulerControl']},
         {suppressMapOpenBlock: true, yandexMapDisablePoiInteractivity: true});
     var busRoutes = {2: null, 3: null, 4: null, 5: null};
+    zero.addEventListener('click', function(event) {
+        resetMap(0, [30.243380, 166.667695]);
+    }
     one.addEventListener('click', function(event) {
         resetMap(1, [12.244444, 109.192778]);
         var routeN = event.target.id;
@@ -15,9 +18,7 @@ function allLoad() {
         if (event.target.id == 'clear') myMap.geoObjects.removeAll();
     });
     two.addEventListener('click', function(event) {
-        main.style.opacity = 1;
-        myMap.geoObjects.removeAll();
-        myMap.setCenter([52.265374, 104.393120], 14);
+        resetMap(1, [52.265374, 104.393120]);
         var onHouses = true;
     	var collectionHouses = new ymaps.GeoObjectCollection({}, {preset: 'islands#blueStretchyIcon'});
     	collectionHouses.add(new ymaps.Placemark([52.262570, 104.406215], {iconContent: "пеленгатор"}));
