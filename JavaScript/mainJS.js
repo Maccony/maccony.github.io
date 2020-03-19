@@ -27,6 +27,7 @@ function allLoad() {
         if (event.target.id == 'placeMark') {
             if (onHouses) {myMap.geoObjects.add(collectionHouses); onHouses = false;}
 			else {myMap.geoObjects.remove(collectionHouses); onHouses = true;}
+            console.log(onHouses);
         }
     });
 }
