@@ -5,9 +5,7 @@ function allLoad() {
         {suppressMapOpenBlock: true, yandexMapDisablePoiInteractivity: true});
     var busRoutes = {2: null, 3: null, 4: null, 5: null};
     one.addEventListener('click', function(event) {
-        main.style.opacity = 1;
-        myMap.geoObjects.removeAll();
-        myMap.setCenter([12.244444, 109.192778], 14);
+        resetMap(1, [12.244444, 109.192778]);
         var routeN = event.target.id;
         if (+event.target.id > 0) {
             if (busRoutes[routeN] == null) { busRoutes[routeN] = makeRoute(routeN);
@@ -30,4 +28,9 @@ function allLoad() {
 			else {myMap.geoObjects.remove(collectionHouses); onHouses = true;}
         }
     });
+}
+function resetMap (opacityMap, centerMap) {
+    main.style.opacity = opacityMap;
+    myMap.geoObjects.removeAll();
+    myMap.setCenter(centerMap, 14);
 }
