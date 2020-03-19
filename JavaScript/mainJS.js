@@ -8,11 +8,11 @@ function allLoad() {
                 {suppressMapOpenBlock: true, yandexMapDisablePoiInteractivity: true});
         }
         var routeN = event.target.id;
+        console.log(routeN);
         if (routeN != "one") {
             if (busRoutes[routeN] == null) { busRoutes[routeN] = makeRoute(routeN);
                 myMap.geoObjects.add(busRoutes[routeN]);}
             else {myMap.geoObjects.remove(busRoutes[routeN]); busRoutes[routeN] = null;}
-            console.log(event.target.id);
         }
     });
 }
