@@ -9,7 +9,7 @@ function allLoad() {
         }
         var routeN = event.target.id;
         console.log(routeN);
-        console.log(Number.isInteger(routeN));
+        console.log(typeof routeN);
         if (typeof routeN == 'number') {
             if (busRoutes[routeN] == null) { busRoutes[routeN] = makeRoute(routeN);
                 myMap.geoObjects.add(busRoutes[routeN]);}
