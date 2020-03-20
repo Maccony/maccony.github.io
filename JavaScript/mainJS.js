@@ -13,12 +13,11 @@ function allLoad() {
     one.addEventListener('click', function(event) {
         resetMap(1, [12.244444, 109.192778]);
         var routeN = event.target.id;
-        if (+event.target.id > 0) {
+        if (+routeN > 0) {
             if (busRoutes[routeN] == null) { busRoutes[routeN] = makeRoute(routeN);
                 myMap.geoObjects.add(busRoutes[routeN]);}
             else {myMap.geoObjects.remove(busRoutes[routeN]); busRoutes[routeN] = null;}
         }
-        if (event.target.id == 'clear') myMap.geoObjects.removeAll();
     });
     two.addEventListener('click', function(event) {
         resetMap(1, [52.265374, 104.393120]);
