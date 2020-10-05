@@ -39,3 +39,4 @@ body {background-image: url(/images/white-fabric.png);
 .linux::before {content: "\f11c"}
 .placeMark::before {content: "\f3c5"}
 .poligon::before {content: "\f5ee"}
+.rocket::before {content: "\f135"}
